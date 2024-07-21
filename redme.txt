@@ -1,0 +1,29 @@
+
+
+Jeżeli Zbrojownia ma działac poprawnie potrzebujemy dodać ten kod do 
+/ox_inventory/data/shops.lua
+
+FIBArmoury = {
+		name = 'Zbrojownia',
+		groups = shared.fib,
+		blip = {
+			id = 110, colour = 84, scale = 0
+		}, inventory = {
+			{ name = 'ammo-9', price = 5, },
+			{ name = 'ammo-rifle', price = 5, },
+			{ name = 'WEAPON_FLASHLIGHT', price = 20 },
+			{ name = 'WEAPON_NIGHTSTICK', price = 10 },
+			{ name = 'WEAPON_FLASHBANG', price = 200 },
+			{ name = 'handcuffs', price = 100},
+			{ name = 'GPS', price = 10 },
+			{ name = 'bodycam', price = 10 },
+			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'POL' }, license = 'weapon' },
+			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'POL' }, license = 'weapon', grade = 3 },
+			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'POL'} },
+			{ name = 'radio', price = 50},
+		}, locations = {
+			vec3(131.31, -762.38, 44.76)
+		}, targets = {
+			{ loc = vec3(131.31, -762.38, 44.76), length = 2, width = 2, heading = 0, minZ = 44.49, maxZ = 46.49, distance = 6 }
+		}
+	},
